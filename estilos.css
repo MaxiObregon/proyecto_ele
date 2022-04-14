@@ -47,6 +47,60 @@ ul{
 	list-style: none;
 }
 
+.border{
+	border: solid 1px black;
+}
+.tituloColumna{
+	margin: 5px;
+	margin-left: 35px;
+}
+.degradadoHeader{
+	background: linear-gradient(#DF744A, #DCB239)
+}
+.listaAnimada{
+	animation-name: texto;
+	animation-duration: 2s;
+}
+.subLista{
+	margin-left: 5px;
+	font-size: small;
+}
+.lista{
+	margin: 5px;
+	padding: 10px 15px;
+	border-radius: 10% / 50%;
+	background: #FEDCD2;
+	color: black;
+}
+.niveles{
+	display: inline-block;
+	margin: 10px 40px;
+	padding: 40px;
+	background-color: #FEDCD2;
+}
+.niveles:hover{
+	transform: rotate(5deg);
+}
+.contactoFormulario{
+	margin: 2px;
+	padding: 0px;
+}
+.contactoEntreFormularios{
+	margin-bottom: 15px;	
+}
+.click:hover{
+	opacity: 0.5;	
+}
+.largo{
+	height: 200vh;
+}
+.contactoBarra{
+	width: 20%;
+}
+.limite{
+	height: 550px;
+}
+
 #grid-index{
 	display: grid;
 	grid-template-areas: 
@@ -82,6 +136,7 @@ ul{
 		grid-template-rows: 1fr 3fr 3fr 1fr;
 		grid-column-gap: 2px;
 		grid-row-gap: 2px;
+		height: 250px;
 }
 #grid-unidad{
 	height: 105vh;
@@ -95,55 +150,6 @@ ul{
 		grid-template-rows: 1fr 3fr 3fr 1fr;
 		grid-column-gap: 2px;
 		grid-row-gap: 2px;
-}
-
-
-.border{
-	border: solid 1px black;
-}
-.tituloColumna{
-	margin: 5px;
-	margin-left: 35px;
-}
-.degradadoHeader{
-	background: linear-gradient(#DF744A, #DCB239)
-}
-.listaAnimada{
-	animation-name: texto;
-	animation-duration: 2s;
-}
-.subLista{
-	margin-left: 5px;
-	font-size: small;
-}
-.lista{
-	margin: 5px;
-	padding: 10px 25px;
-	border-radius: 10% / 50%;
-	background: #FEDCD2;
-	color: black;
-}
-.niveles{
-	display: inline-block;
-	margin: 10px 40px;
-	padding: 40px;
-	background-color: #FEDCD2;	
-}
-.contactoFormulario{
-	margin: 2px;
-	padding: 0px;
-}
-.contactoEntreFormularios{
-	margin-bottom: 15px;	
-}
-.click:hover{
-	opacity: 0.5;	
-}
-.largo{
-	height: 200vh;
-}
-.contactoBarra{
-	width: 20%;
 }
 
 @keyframes texto{
