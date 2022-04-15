@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>CELE</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="estilos.css">
 	<link rel="icon" href="faviconCELE.ico" type="image/x-icon">
 </head>
@@ -12,7 +13,7 @@
 		<h1>Clases de español</h1>
 		<h2>Una manera diferente de aprender</h2>
 	</header>
-	<nav class="border"> 
+	<nav class="border navIndex"> 
 			<span class="lista click listaAnimada"><a href="paginas/A1.html">A1</a></span>
 			<span class="lista click listaAnimada"><a href="paginas/A2.html">A2</a></span>
 			<span class="lista click listaAnimada"><a href="paginas/B1.html">B1</a></span>
@@ -23,15 +24,96 @@
 			<span class="lista click listaAnimada"><a href="paginas/lecturas.html">Lecturas</a></span>
 			<span class="lista click listaAnimada"><a href="paginas/contacto.html">Contacto</a></span>
 	</nav>
-	<section id="section" class="border"> Section</section>
-	<main id="main" style="	text-align: center;" class="border agrandar"> 
+	<section id="section" class="border sectionIndex">
+			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+		 	<div class="carousel-indicators">
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		  </div>
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <a href="https://www.spanishlearninglab.com/wp-content/uploads/2021/05/frutas-y-vegetales-espanol-fruits-vegetables-Spanish-worksheet.pdf"><img src="imagenes/frutasyverduras.png" class="d-block w-100 tamañoCarrusel" alt="..."></a>
+		      <div class="textoCentrado">Frutas y verduras</div>
+		    </div>
+		    <div class="carousel-item">
+		      <a href="https://www.spanishlearninglab.com/los-deportes-en-espanol/"><img src="imagenes/deportes.jpg" class="d-block w-100 tamañoCarrusel" alt="..."></a>
+		      <div class="textoCentrado">Deportes</div>
+		    </div>
+		    <div class="carousel-item">
+		      <a href="https://onspainschool.com/es/numeros-en-espanol/"><img src="imagenes/numeros.jpg" class="d-block w-100 tamañoCarrusel" alt="..."></a>
+		      <div class="textoCentrado">Números</div>
+		    </div>
+		  </div>
+		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Previous</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Next</span>
+		  </button>
+		</div>
+	</section>
+	<main id="main" style="	text-align: center;" class="border"> 
 		<h2>Poema de la semana</h2>
-		<p></p>
+		<p>
+			Y sé muy bien que no estarás. <br>
+			No estarás en la calle, <br>
+			en el murmullo que brota de noche <br>
+			de los postes de alumbrado, <br>
+			ni en el gesto de elegir el menú, <br>
+			ni en la sonrisa que alivia <br>
+			los completos de los subtes, <br>
+			ni en los libros prestados <br>
+			ni en el hasta mañana. <br>
+			<a href="paginas/poema_futuro_cortazar.html" class="">...</a>
+		</p>
 	</main>
-	<div class="border"></div>
+	<div class="border">
+	<table class="table">
+	  <thead>
+	    <tr>
+	      <th scope="col">#</th>
+	      <th scope="col">Siete buenas prácticas para aprender castellano</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr>
+	      <th scope="row">1</th>
+	      <td>Practicá</td>
+	    </tr>
+	    <tr>
+	      <th scope="row">2</th>
+	      <td>Leé</td>
+	    </tr>
+	    <tr>
+	      <th scope="row">3</th>
+	      <td>Escuchá música</td>
+	    </tr>
+	    <tr>
+	      <th scope="row">4</th>
+	      <td>Hablá con nativos</td>
+	    </tr>
+	    <tr>
+	      <th scope="row">5</th>
+	      <td>Traducí oraciones</td>
+	    </tr>
+	    <tr>
+	      <th scope="row">6</th>
+	      <td colspan="2">Pensá en castellano</td>
+	    </tr>
+	    <tr>
+	      <th scope="row">7</th>
+	      <td colspan="2">Disfrutá el aprendizaje</td>
+	    </tr>
+	  </tbody>
+</table>
+	</div>
 	<footer class="border"> 
 		<p>Copyright 2022 Desarrollado por M. Obregón</p>
 		<p><a href="paginas/contacto.html" style="text-decoration: none; color: black; background-color: #BFD8D2;">Contactános</p>
 	</footer>
+<script src="js/bootstrap.js"></script>
 </body>
 </html>

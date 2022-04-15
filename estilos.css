@@ -16,6 +16,7 @@ nav{
 	grid-area: nav;
 	display: flex;
 	flex-flow: column nowrap;
+	height: 500px;
 }
 section{
 	grid-area: section;
@@ -45,6 +46,9 @@ a{
 ul{
 	margin: 3px;
 	list-style: none;
+}
+h5{
+	text-align: center;
 }
 
 .border{
@@ -99,6 +103,25 @@ ul{
 }
 .limite{
 	height: 550px;
+}
+.tamañoCarrusel{
+	height: 60vh;
+}
+.fondoCarrusel{
+	background-color: none;
+}
+.navIndex{
+	height: 125vh;
+}
+.sectionIndex{
+	margin: 0px;
+	padding: 0px;
+}
+.textoCentrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #grid-index{
