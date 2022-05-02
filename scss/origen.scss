@@ -1,8 +1,12 @@
+
+$color1:#BFD8D2;
+$color2:#FEDCD2;
+
 *{
 	margin:0px; padding: 0px;
 	box-sizing: border-box;
 	font-family: sans-serif;
-	background-color: #BFD8D2;
+	background-color: $color1;
 } 
 
 header, nav, section, main, footer{
@@ -40,7 +44,7 @@ body{
 	}
 a{
 	text-decoration: none;
-	background: #FEDCD2;
+	background: $color2;
 	color: black;
 }
 ul{
@@ -73,14 +77,14 @@ h5{
 	margin: 5px;
 	padding: 10px 15px;
 	border-radius: 10% / 50%;
-	background: #FEDCD2;
+	background: $color2;
 	color: black;
 }
 .niveles{
 	display: inline-block;
 	margin: 10px 40px;
 	padding: 40px;
-	background-color: #FEDCD2;
+	background-color: $color2;
 }
 .niveles:hover{
 	transform: rotate(5deg);
@@ -168,6 +172,18 @@ h5{
 	"header header header header"
 	"nav section section lateral"
 	"nav section section lateral"
+	"footer footer footer footer";
+		grid-template-columns: 15% 35% 35% 15%;
+		grid-template-rows: 1fr 3fr 3fr 1fr;
+		grid-column-gap: 2px;
+		grid-row-gap: 2px;
+}
+#grid-lecturas{
+	display: grid;
+	grid-template-areas: 
+	"header header header header"
+	"nav section section section"
+	"nav main main main"	
 	"footer footer footer footer";
 		grid-template-columns: 15% 35% 35% 15%;
 		grid-template-rows: 1fr 3fr 3fr 1fr;
