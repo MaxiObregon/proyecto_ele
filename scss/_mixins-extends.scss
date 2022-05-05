@@ -1,0 +1,39 @@
+.border{
+	border: solid 1px black;
+}
+
+.border-contacto {
+	@extend .border;
+	border: white;
+}	
+
+@mixin dimensiones($alto, $ancho){
+	height: $alto;
+	widht: $ancho;
+}
+
+caja1{
+	@include dimensiones (10px, 10px)
+}
+
+caja2{
+	@include dimensiones (25px, 25px)
+}
+
+$mapa:(
+	index: cyan,
+	a1: purple,
+	A2: violet,
+	B1: pink,
+	B2: green,
+	C1: grey,
+	C2: yellow,
+	Lecturas: blue,
+	contacto: red,
+	);
+
+@each $pagina, $color in $mapa{
+	.nivel-pagina{
+		background-color: $color;
+	}
+}

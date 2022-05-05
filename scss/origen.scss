@@ -1,3 +1,5 @@
+@import "mixins-extends";
+
 
 $color1:#BFD8D2;
 $color2:#FEDCD2;
@@ -15,6 +17,7 @@ header, nav, section, main, footer{
 header{
 	grid-area: header;
 	text-align: center;
+	background-color: $color2;
 }
 nav{
 	grid-area: nav;

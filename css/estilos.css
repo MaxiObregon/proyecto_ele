@@ -1,4 +1,58 @@
 @charset "UTF-8";
+.border, .border-contacto {
+  border: solid 1px black;
+}
+
+.border-contacto {
+  border: white;
+}
+
+caja1 {
+  height: 10px;
+  widht: 10px;
+}
+
+caja2 {
+  height: 25px;
+  widht: 25px;
+}
+
+.nivel-pagina {
+  background-color: cyan;
+}
+
+.nivel-pagina {
+  background-color: purple;
+}
+
+.nivel-pagina {
+  background-color: violet;
+}
+
+.nivel-pagina {
+  background-color: pink;
+}
+
+.nivel-pagina {
+  background-color: green;
+}
+
+.nivel-pagina {
+  background-color: grey;
+}
+
+.nivel-pagina {
+  background-color: yellow;
+}
+
+.nivel-pagina {
+  background-color: blue;
+}
+
+.nivel-pagina {
+  background-color: red;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -14,6 +68,7 @@ header, nav, section, main, footer {
 header {
   grid-area: header;
   text-align: center;
+  background-color: #FEDCD2;
 }
 
 nav {
@@ -62,7 +117,7 @@ h5 {
   text-align: center;
 }
 
-.border {
+.border, .border-contacto {
   border: solid 1px black;
 }
 
