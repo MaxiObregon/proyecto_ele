@@ -123,7 +123,6 @@ h5 {
 
 .tituloColumna {
   margin: 5px;
-  margin-left: 35px;
 }
 
 .degradadoHeader {
@@ -134,10 +133,14 @@ h5 {
   animation-name: texto;
   animation-duration: 2s;
 }
-
+.subListaTitulo {
+  margin-left: -25px;
+  font-size: medium;
+}
 .subLista {
-  margin-left: 5px;
+  margin-left: -20px;
   font-size: small;
+  padding: 2px;
 }
 
 .lista {
