@@ -3,12 +3,10 @@
 
 $color1:#BFD8D2;
 $color2:#FEDCD2;
+$color3:#DF744A;
 
 *{
-	margin:0px; padding: 0px;
-	box-sizing: border-box;
 	font-family: sans-serif;
-	background-color: $color1;
 } 
 
 header, nav, section, main, footer{
@@ -23,22 +21,28 @@ nav{
 	grid-area: nav;
 	display: flex;
 	flex-flow: column nowrap;
-	height: 500px;
+	background-color: $color1;
+
 }
 section{
 	grid-area: section;
 	flex-flow: wrap;
+	background-color: $color1;
+
 }
 main{
 	grid-area: main;
+	background-color: $color1;
 }
-div{
+aside{
 	grid-area: lateral;	
+	background-color: $color1;
 }
 footer{
 	grid-area: footer;
 	text-align: center;
 	color: black;
+	background-color: $color1;
 }
 
 body{
@@ -47,20 +51,14 @@ body{
 	}
 a{
 	text-decoration: none;
-	background: $color2;
 	color: black;
 }
 ul{
 	margin: 3px;
 	list-style: none;
 }
-h5{
-	text-align: center;
-}
 
-.border{
-	border: solid 1px black;
-}
+
 .tituloColumna{
 	margin: 5px;
 	margin-left: 35px;
@@ -82,6 +80,9 @@ h5{
 	border-radius: 10% / 50%;
 	background: $color2;
 	color: black;
+}
+.naranja{
+	background-color: $color3;
 }
 .niveles{
 	display: inline-block;
@@ -130,68 +131,87 @@ h5{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.letraCarrusel{
+	font-size: x-large;
+	color: white;
+}
+.letraCarrusel2{
+	font-size: x-large;
+}
+.lecturaCortazar{
+	margin-left: 80px;
+	margin-top: 30px;
+}
+.lecturaTitulo{
+	margin-left: 80px;
+	margin-top: 20px;
+}
+.indexLectura{
+	text-align: center;
+}
+.lecturaMenu{
+	width: 60%;
+	margin-left: 10%;
+	margin-top: 5%;
+}
+.lecturaBoton{
+
+}
+.colorFondo1{
+	background-color: $color3;
+}
 
 #grid-index{
 	display: grid;
 	grid-template-areas: 
-	"header header header header"
-	"nav section section lateral"
-	"nav main main lateral"
-	"footer footer footer footer";
-		grid-template-columns: 15% 35% 35% 15%;
+	"header header header"
+	"nav section lateral"
+	"nav main lateral"
+	"footer footer footer";
+		grid-template-columns: 15% 70% 15%;
 		grid-template-rows: 1fr 3fr 3fr 1fr;
 		grid-column-gap: 2px;
 		grid-row-gap: 2px;
+		background-color: $color1;
 }
 #grid-niveles{
 	display: grid;
 	grid-template-areas: 
-	"header header header header"
-	"nav section section lateral"
-	"nav main main lateral"
-	"footer footer footer footer";
-		grid-template-columns: 15% 35% 35% 15%;
+	"header header header"
+	"nav section lateral"
+	"nav main lateral"
+	"footer footer footer";
+		grid-template-columns: 15% 70% 15%;
 		grid-template-rows: 1fr 3fr 3fr 1fr;
 		grid-column-gap: 2px;
 		grid-row-gap: 2px;
+		background-color: $color1;
 }
 #grid-contacto{
 	display: grid;
 	grid-template-areas: 
-	"header header header header"
-	"nav main main main"
-	"nav main main main"
-	"footer footer footer footer";
-		grid-template-columns: 15% 35% 35% 15%;
-		grid-template-rows: 1fr 3fr 3fr 1fr;
+	"header header header"
+	"nav main main"
+	"footer footer footer";
+		grid-template-columns: 15% 70% 15%;
+		grid-template-rows: 1fr 6fr 1fr;
 		grid-column-gap: 2px;
 		grid-row-gap: 2px;
-		height: 250px;
-}
-#grid-unidad{
-	height: 105vh;
-	display: grid;
-	grid-template-areas: 
-	"header header header header"
-	"nav section section lateral"
-	"nav section section lateral"
-	"footer footer footer footer";
-		grid-template-columns: 15% 35% 35% 15%;
-		grid-template-rows: 1fr 3fr 3fr 1fr;
-		grid-column-gap: 2px;
-		grid-row-gap: 2px;
+		height: 950px;
+		background-color: $color1;
 }
 #grid-lecturas{
 	display: grid;
 	grid-template-areas: 
-	"header header header header"
-	"nav section section section"
-	"nav main main main"	
-	"footer footer footer footer";
-		grid-template-columns: 15% 35% 35% 15%;
+	"header header header"
+	"nav section section"
+	"nav main main"	
+	"footer footer footer";
+		grid-template-columns: 15% 70% 15%;
 		grid-template-rows: 1fr 3fr 3fr 1fr;
 		grid-column-gap: 2px;
 		grid-row-gap: 2px;
+		background-color: $color1;
 }
 
 @keyframes texto{
@@ -207,11 +227,11 @@ h5{
 	#grid-index{
 		display: grid;
 		grid-template-areas: 
-		"header header header header"
-		"nav section section lateral"
-		"nav main main lateral"
-		"footer footer footer footer";
-			grid-template-columns: 15% 35% 35% 15%;
+		"header header header"
+		"nav section lateral"
+		"nav main lateral"
+		"footer footer footer";
+			grid-template-columns: 15% 70% 15%;
 			grid-template-rows: 1fr 3fr 3fr 1fr;
 			grid-column-gap: 2px;
 			grid-row-gap: 2px;
@@ -219,11 +239,11 @@ h5{
 	#grid-niveles{
 		display: grid;
 		grid-template-areas: 
-		"header header header header"
-		"nav section section lateral"
-		"nav main main lateral"
-		"footer footer footer footer";
-			grid-template-columns: 15% 35% 35% 15%;
+		"header header header"
+		"nav section lateral"
+		"nav main lateral"
+		"footer footer footer";
+			grid-template-columns: 15% 70% 15%;
 			grid-template-rows: 1fr 3fr 3fr 1fr;
 			grid-column-gap: 2px;
 			grid-row-gap: 2px;
@@ -231,25 +251,11 @@ h5{
 	#grid-contacto{
 		display: grid;
 		grid-template-areas: 
-		"header header header header"
-		"nav main main main"
-		"nav main main main"
-		"footer footer footer footer";
-			grid-template-columns: 15% 35% 35% 15%;
-			grid-template-rows: 1fr 3fr 3fr 1fr;
-			grid-column-gap: 2px;
-			grid-row-gap: 2px;
-	}
-	#grid-unidad{
-		height: 105vh;
-		display: grid;
-		grid-template-areas: 
-		"header header header header"
-		"nav section section lateral"
-		"nav section section lateral"
-		"footer footer footer footer";
-			grid-template-columns: 15% 35% 35% 15%;
-			grid-template-rows: 1fr 3fr 3fr 1fr;
+		"header header header"
+		"nav main main"
+		"footer footer footer";
+			grid-template-columns: 15% 70% 15%;
+			grid-template-rows: 1fr 6fr 1fr;
 			grid-column-gap: 2px;
 			grid-row-gap: 2px;
 	}
@@ -264,7 +270,7 @@ h5{
 		"nav main lateral"
 		"footer footer footer";
 			grid-template-columns: 20% 60% 20%;
-			grid-template-rows: 1fr 3fr 1fr;
+			grid-template-rows: 1fr 3fr 3fr 1fr;
 			grid-column-gap: 2px;
 			grid-row-gap: 2px;
 		}
@@ -276,7 +282,7 @@ h5{
 		"nav main lateral"
 		"footer footer footer";
 			grid-template-columns: 20% 60% 20%;
-			grid-template-rows: 1fr 3fr 1fr;
+			grid-template-rows: 1fr 3fr 3fr 1fr;
 			grid-column-gap: 2px;
 			grid-row-gap: 2px;
 	}
@@ -288,20 +294,7 @@ h5{
 		"nav main main"
 		"footer footer footer";
 			grid-template-columns: 20% 60% 20%;
-			grid-template-rows: 1fr 3fr 1fr;
-			grid-column-gap: 2px;
-			grid-row-gap: 2px;
-	}
-	#grid-unidad{
-		height: 105vh;
-		display: grid;
-		grid-template-areas: 
-		"header header header"
-		"nav section lateral"
-		"nav section lateral"
-		"footer footer footer";
-			grid-template-columns: 20% 60% 20%;
-			grid-template-rows: 1fr 3fr 1fr;
+			grid-template-rows: 1fr 3fr 3fr 1fr;
 			grid-column-gap: 2px;
 			grid-row-gap: 2px;
 	}
@@ -322,7 +315,7 @@ h5{
 		"lateral lateral"
 		"footer footer";
 			grid-template-columns: 25% 75%;
-			grid-template-rows: 1fr 3fr;
+			grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
 			grid-column-gap: 2px;
 			grid-row-gap: 2px;
 		}
@@ -335,7 +328,7 @@ h5{
 		"lateral lateral"
 		"footer footer";
 			grid-template-columns: 25% 75%;
-			grid-template-rows: 1fr 3fr;
+			grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
 			grid-column-gap: 2px;
 			grid-row-gap: 2px;
 	}
@@ -347,21 +340,7 @@ h5{
 		"nav main"
 		"footer footer";
 			grid-template-columns: 25% 75%;
-			grid-template-rows: 1fr 3fr;
-			grid-column-gap: 2px;
-			grid-row-gap: 2px;
-	}
-	#grid-unidad{
-		height: 105vh;
-		display: grid;
-		grid-template-areas: 
-		"header header"
-		"nav section"
-		"nav section"
-		"lateral lateral"
-		"footer footer";
-			grid-template-columns: 25% 75%;
-			grid-template-rows: 1fr 3fr;
+			grid-template-rows: 1fr 3fr 3fr 1fr;
 			grid-column-gap: 2px;
 			grid-row-gap: 2px;
 	}
