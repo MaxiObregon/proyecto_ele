@@ -113,10 +113,6 @@ ul {
   margin-left: 35px;
 }
 
-.degradadoHeader {
-  background: linear-gradient(#DF744A, #DCB239);
-}
-
 .listaAnimada {
   animation-name: texto;
   animation-duration: 2s;
@@ -129,7 +125,7 @@ ul {
 
 .lista {
   margin: 5px;
-  padding: 10px 15px;
+  padding: 10px 20%;
   border-radius: 10%/50%;
   background: #FEDCD2;
   color: black;
@@ -141,8 +137,8 @@ ul {
 
 .niveles {
   display: inline-block;
-  margin: 10px 40px;
-  padding: 40px;
+  margin: 2% 4%;
+  padding: 7%;
   background-color: #FEDCD2;
 }
 
@@ -167,16 +163,12 @@ ul {
   opacity: 0.5;
 }
 
-.largo {
-  height: 200vh;
-}
-
 .contactoBarra {
   width: 20%;
 }
 
 .limite {
-  height: 550px;
+  height: 100vh;
 }
 
 .tamañoCarrusel {
@@ -188,7 +180,7 @@ ul {
 }
 
 .navIndex {
-  height: 125vh;
+  height: 100%;
 }
 
 .sectionIndex {
@@ -313,7 +305,7 @@ ul {
     display: grid;
     grid-template-areas: "header header header" "nav main main" "nav main main" "footer footer footer";
     grid-template-columns: 15% 70% 15%;
-    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr 1fr;
     grid-column-gap: 2px;
     grid-row-gap: 2px;
   }
@@ -325,33 +317,41 @@ ul {
     grid-template-rows: 1fr 3fr 1fr;
     grid-column-gap: 2px;
     grid-row-gap: 2px;
-    background-color: #BFD8D2;
   }
 }
 @media (min-width: 480px) and (max-width: 1023px) {
   #grid-index {
     display: grid;
-    grid-template-areas: "header header header" "nav section lateral" "footer footer footer";
-    grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 1fr 3fr 3fr 1fr;
+    grid-template-areas: "header header" "nav nav" "section section" "lateral lateral" "main main" "footer footer";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 2fr 3fr 3fr 3fr 3fr 1fr;
     grid-column-gap: 2px;
     grid-row-gap: 2px;
   }
 
   #grid-niveles {
     display: grid;
-    grid-template-areas: "header header header" "nav section lateral" "footer footer footer";
-    grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 1fr 3fr 3fr 1fr;
+    grid-template-areas: "header header" "nav nav" "section section" "lateral lateral" "main main" "footer footer";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 2fr 3fr 3fr 3fr 3fr 2fr;
     grid-column-gap: 2px;
     grid-row-gap: 2px;
   }
 
   #grid-contacto {
     display: grid;
-    grid-template-areas: "header header header" "nav main main" "footer footer footer";
-    grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 1fr 3fr 3fr 1fr;
+    grid-template-areas: "header header" "nav nav" "main main" "footer footer";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 2fr 3fr 3fr 2fr;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+  }
+
+  #grid-lecturas {
+    display: grid;
+    grid-template-areas: "header header" "nav nav" "section section" "footer footer";
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 2fr 3fr 3fr 2fr;
     grid-column-gap: 2px;
     grid-row-gap: 2px;
   }
@@ -365,27 +365,36 @@ ul {
 @media (max-width: 479px) {
   #grid-index {
     display: grid;
-    grid-template-areas: "header header" "nav section" "nav main" "lateral lateral" "footer footer";
-    grid-template-columns: 25% 75%;
-    grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
+    grid-template-areas: "header " "nav" "section" "main" "lateral " "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 2fr 2fr 2fr 2fr 1fr;
     grid-column-gap: 2px;
     grid-row-gap: 2px;
   }
 
   #grid-niveles {
     display: grid;
-    grid-template-areas: "header header" "nav section" "nav main" "lateral lateral" "footer footer";
-    grid-template-columns: 25% 75%;
-    grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
+    grid-template-areas: "header" "nav" "main" "section" "lateral" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 2fr 2fr 2fr 2fr 1fr;
     grid-column-gap: 2px;
     grid-row-gap: 2px;
   }
 
   #grid-contacto {
     display: grid;
-    grid-template-areas: "header header" "nav main" "nav main" "footer footer";
-    grid-template-columns: 25% 75%;
-    grid-template-rows: 1fr 3fr 3fr 1fr;
+    grid-template-areas: "header" "nav" "main" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+  }
+
+  #grid-lecturas {
+    display: grid;
+    grid-template-areas: "header" "nav" "section" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 2fr 2fr 1fr;
     grid-column-gap: 2px;
     grid-row-gap: 2px;
   }
