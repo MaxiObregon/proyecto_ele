@@ -13,59 +13,53 @@
 		<h1>Clases de español</h1>
 		<h2>Una manera diferente de aprender</h2>
 	</header>
-	<nav> 
-		<span class="lista click naranja"><a href="../index.html">Inicio</a></span>			
-		<span class="lista click listaAnimada"><a href="A1.html">A1</a></span>
-		<span class="lista click listaAnimada"><a href="A2.html">A2</a></span>
-		<span class="lista click listaAnimada"><a href="B1.html">B1</a></span>
-		<span class="lista click listaAnimada"><a href="B2.html">B2</a></span>
-		<span class="lista click listaAnimada"><a href="C1.html">C1</a></span>
-		<span class="lista click listaAnimada"><a href="C2.html">C2</a></span>
+	<nav class="navIndex"> 
+		<span class="lista click naranja"><a href="../index.html">Inicio</a></span>
+		<span class="lista naranja"><p class="botonNiveles">Niveles:</p></span>
+		<span class="lista click listaAnimada"><a href="basico.html">Básico</a></span>
+		<span class="lista click listaAnimada"><a href="intermedio.html">Intermedio</a></span>
+		<span class="lista click listaAnimada"><a href="avanzado.html">Avanzado</a></span>
 		<span class="lista click listaAnimada"><a href="lecturas.html">Lecturas</a></span>
+		<span class="lista click listaAnimada"><a href="contacto.html">Contacto</a></span>
 	</nav>
 	<main class="largo limite">
 		<form class="contactoFormulario" action="">
-			<h2>Datos de contacto</h2>
+			<h4>Datos de contacto</h4>
 			<label for="nombre"> Nombre:</label>
-			<input class="contactoBarra" type="text" name="Nombre"> <br>
+			<input class="contactoBarra contactoEntreFormularios" type="text" name="Nombre"> 
 			<label for="nombre"> Apellidos:</label>
-			<input class="contactoBarra" type="text" name="Apellidos"> <br>
+			<input class="contactoBarra contactoEntreFormularios" type="text" name="Apellidos"> <br>
 			<label for="email"> Email:</label>
-			<input class="contactoBarra" type="email" name="Correo"> <br>
-			<label for="password"> Password:</label>
-			<input class="contactoBarra" type="password" name="Clave de acceso"> <br>
-			<label for="domicilio"> Domicilio:</label>
-			<input class=" contactoBarra contactoEntreFormularios" type="domicilio" name="Domicilio"> <br>
-			<h3>Género</h3>
+			<input class="contactoBarra contactoEntreFormularios" type="email" name="Correo"> <br>
+			<h4>Género</h4>
 			<span>Hombre</span>
 			<input type="radio" name="sexo"	value="hombre">
 			<span>Mujer</sapn>
 			<input type="radio" name="sexo"	value="mujer">
-			<span>Helicóptero apache</sapn>
-			<input class="contactoEntreFormularios" type="radio" name="sexo" value="Helicóptero apache">
-			<h3>Casilla de verificación</h3>
+			<span>No binario</sapn>
+			<input class="contactoEntreFormularios" type="radio" name="sexo" value="No binario">
+			<h4>Casilla de verificación</h4>
 			<span>Acepto los términos y condiciones</span>
 			<input class="contactoEntreFormularios" type="checkbox" name="acepta" value="1">
-			<h3>Nivel</h3>
+			<h4>Nivel</h4>
 			<select class="contactoEntreFormularios" name="Nivel">
-				<option value=""> Seleccionar nivel de español</option>
-				<option value="A1"> A1</option>
-				<option value="A2"> A2</option>
-				<option value="B1"> B1</option>
-				<option value="B2"> B2</option>
-				<option value="C1"> C1</option>
-				<option value="C2"> C2</option>
+				<option value=""> Seleccionar nivel de castellano</option>
+				<option value="A1">A1</option>
+				<option value="A2">A2</option>
+				<option value="B1">B1</option>
+				<option value="B2">B2</option>
+				<option value="C1">C1</option>
+				<option value="C2">C2</option>
 			</select> <br>
-			<h3>Comentarios</h3>	
+			<h4>Comentarios</h4>	
 			<textarea name="" id="" cols="60" rows="9"></textarea> <br>
 			<input type="submit" value="Enviar formulario">
 			<input type="reset" value="Limpiar formulario">
-			<input class="entreFormularios" type="button" value="Sin acciones">
 		</form>
 	</main>
 	<footer> 
 		<p>Desarrollado por M. Obregón <br> ©2022 </p>
 	</footer>
-<script src="js/bootstrap.js"></script>
+<script src="../bootstrap/js/bootstrap.js"></script>
 </body>
 </html>

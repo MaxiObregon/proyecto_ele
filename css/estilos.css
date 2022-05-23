@@ -1,8 +1,4 @@
 @charset "UTF-8";
-.border, .border-contacto {
-  border: solid 1px black;
-}
-
 .border-contacto {
   border: white;
 }
@@ -108,7 +104,7 @@ a {
 }
 
 ul {
-  margin: 3px;
+  margin: 0px;
   list-style: none;
 }
 
@@ -152,6 +148,10 @@ ul {
 
 .niveles:hover {
   transform: rotate(5deg);
+}
+
+.botonNiveles {
+  margin: 0px;
 }
 
 .contactoFormulario {
@@ -236,6 +236,10 @@ ul {
   background-color: #DF744A;
 }
 
+.colorFondo2 {
+  background-color: #FEDCD2;
+}
+
 #grid-index {
   display: grid;
   grid-template-areas: "header header header" "nav section lateral" "nav main lateral" "footer footer footer";
@@ -269,9 +273,9 @@ ul {
 
 #grid-lecturas {
   display: grid;
-  grid-template-areas: "header header header" "nav section section" "nav main main" "footer footer footer";
+  grid-template-areas: "header header header" "nav section section" "footer footer footer";
   grid-template-columns: 15% 70% 15%;
-  grid-template-rows: 1fr 3fr 3fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr;
   grid-column-gap: 2px;
   grid-row-gap: 2px;
   background-color: #BFD8D2;
@@ -307,17 +311,27 @@ ul {
 
   #grid-contacto {
     display: grid;
-    grid-template-areas: "header header header" "nav main main" "footer footer footer";
+    grid-template-areas: "header header header" "nav main main" "nav main main" "footer footer footer";
     grid-template-columns: 15% 70% 15%;
     grid-template-rows: 1fr 6fr 1fr;
     grid-column-gap: 2px;
     grid-row-gap: 2px;
   }
+
+  #grid-lecturas {
+    display: grid;
+    grid-template-areas: "header header header" "nav section section" "footer footer footer";
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    background-color: #BFD8D2;
+  }
 }
 @media (min-width: 480px) and (max-width: 1023px) {
   #grid-index {
     display: grid;
-    grid-template-areas: "header header header" "nav section lateral" "nav main lateral" "footer footer footer";
+    grid-template-areas: "header header header" "nav section lateral" "footer footer footer";
     grid-template-columns: 20% 60% 20%;
     grid-template-rows: 1fr 3fr 3fr 1fr;
     grid-column-gap: 2px;
@@ -326,7 +340,7 @@ ul {
 
   #grid-niveles {
     display: grid;
-    grid-template-areas: "header header header" "nav section lateral" "nav main lateral" "footer footer footer";
+    grid-template-areas: "header header header" "nav section lateral" "footer footer footer";
     grid-template-columns: 20% 60% 20%;
     grid-template-rows: 1fr 3fr 3fr 1fr;
     grid-column-gap: 2px;
@@ -335,7 +349,7 @@ ul {
 
   #grid-contacto {
     display: grid;
-    grid-template-areas: "header header header" "nav main main" "nav main main" "footer footer footer";
+    grid-template-areas: "header header header" "nav main main" "footer footer footer";
     grid-template-columns: 20% 60% 20%;
     grid-template-rows: 1fr 3fr 3fr 1fr;
     grid-column-gap: 2px;
