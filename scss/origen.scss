@@ -326,11 +326,12 @@ ul{
 	#grid-index{
 		display: grid;
 		grid-template-areas: 
-		"header header"
-		"nav section"
-		"nav main"
-		"lateral lateral"
-		"footer footer";
+		"header "
+		"nav"
+		"section"
+		"main"
+		"lateral "
+		"footer";
 			grid-template-columns: 25% 75%;
 			grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
 			grid-column-gap: 2px;
